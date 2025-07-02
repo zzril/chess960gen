@@ -54,6 +54,8 @@ def positionNoToPieceArray(positionNo):
     pieceArray[whiteDarkSquareBishopIndex * 2] = Piece("B")
     pieceArray[whiteLightSquareBishopIndex * 2 + 1] = Piece("B")
 
+    # Taken from [Wikipedia](https://en.wikipedia.org/wiki/Fischer_random_chess_numbering_scheme#King's_table).
+    # (The other ("Bishop's") table is not used, but we just calculate the values directly.)
     kingTable = [
 
         "QNNRKR",
