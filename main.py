@@ -140,27 +140,27 @@ def printPosition(positionNo):
 
     print("black")
     print()
-    print("a b c d e f g h")
 
     for piece in pieceArray:
         print(piece.symbol(white=False), end=" ")
     print()
     for piece in pieceArray:
-        print(Piece("p").symbol(white=False), end=" ")
+        print(piece, end=" ")
     print()
 
     print(f"\n{positionNo}\n")
 
     for piece in pieceArray:
-        print(Piece("p").symbol(white=True), end=" ")
+        print(piece, end=" ")
     print()
     for piece in pieceArray:
         print(piece.symbol(white=True), end=" ")
     print()
 
-    print("a b c d e f g h")
     print()
     print("white")
+    print()
+    print("a b c d e f g h")
 
 # --------
 
